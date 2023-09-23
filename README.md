@@ -1,8 +1,8 @@
-![WorldOfChaldeaChaldeaGIF (2)](https://github.com/sobhanshukueian/Reinforcement-Learning-Playground/assets/47561760/982589d0-d7a8-4b6f-b4b8-6e2b717ccace)# Reinforcement Learning Playground 🚀
+# Reinforcement Learning Playground 🚀
 
 Hey there! I'm super stoked to kick off a new project in this repository. My plan is to implement a bunch of awesome Reinforcement Learning (RL) algorithms using Python, OpenAI Gym environments, and Pytorch. I can't wait to see what exciting results we'll achieve together!
 
-![Uploading WorldOfChaldeaChaldeaGIF (2).gif…]()
+![WorldOfChaldeaChaldeaGIF (2)](https://github.com/sobhanshukueian/Reinforcement-Learning-Playground/assets/47561760/982589d0-d7a8-4b6f-b4b8-6e2b717ccace)
 
 
 ## Table of Contents
@@ -11,7 +11,7 @@ Hey there! I'm super stoked to kick off a new project in this repository. My pla
 - [Algorithms](#algorithms)
   - [DQN (Deep Q-Network)](#dqn-deep-q-network)
   - [Policy Gradient (Implemented✅)](#policy-gradient)
-  - [Actor-Critic (TODO⛔)](#actor-critic)
+  - [Actor-Critic (Underdevelopment⛔)](#actor-critic)
   - [Proximal Policy Optimization (TODO⛔)](#ppo-proximal-policy-optimization)
 
 
@@ -53,11 +53,3 @@ Actor-critic algorithms combine the benefits of value-based and policy-based met
 ### PPO (Proximal Policy Optimization)
 
 PPO is a state-of-the-art policy optimization algorithm known for its stability and sample efficiency. Dive into the world of PPO and see how it outperforms other policy gradient methods.
-
-
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Ready to embark on your RL journey? Let's dive in and watch those agents master the art of balancing the CartPole! Happy Reinforcement Learning! 🌟
