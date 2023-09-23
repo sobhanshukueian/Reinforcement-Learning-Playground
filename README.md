@@ -42,6 +42,13 @@ OpenAI Gym is a toolkit for developing and comparing reinforcement learning algo
 
 Policy Gradient methods focus on directly learning the policy and the agent's strategy to make decisions. Implement and experiment with policy gradient algorithms like REINFORCE, A2C (Advantage Actor-Critic), and more.
 
+####Results
+
+![Uploading cartpole.gif…]()
+
+![Uploading be227de0-9bf6-4c2e-95db-66e4255a740d.png…]()
+
+
 ### DQN (Deep Q-Network)
 
 DQN is a fundamental RL algorithm that uses a deep neural network to approximate the Q-value function. Experience the power of Q-learning and deep neural networks in training agents to balance the CartPole.
