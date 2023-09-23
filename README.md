@@ -42,11 +42,11 @@ OpenAI Gym is a toolkit for developing and comparing reinforcement learning algo
 
 Policy Gradient methods focus on directly learning the policy and the agent's strategy to make decisions. Implement and experiment with policy gradient algorithms like REINFORCE, A2C (Advantage Actor-Critic), and more.
 
-####Results
+#### Results
 
-![Uploading cartpole.gif…]()
+![cartpole](https://github.com/sobhanshukueian/Reinforcement-Learning-Playground/assets/47561760/868e2d4c-32bf-4fc5-8fc3-3031cfc05fec)![be227de0-9bf6-4c2e-95db-66e4255a740d](https://github.com/sobhanshukueian/Reinforcement-Learning-Playground/assets/47561760/0a1281e4-04b5-45b6-b171-55e78da53b59)
 
-![Uploading be227de0-9bf6-4c2e-95db-66e4255a740d.png…]()
+
 
 
 ### DQN (Deep Q-Network)
