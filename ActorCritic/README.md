@@ -28,4 +28,8 @@ Let's navigate this repository like seasoned adventurers:
 - `README.md`: You are here!
 
 ## Results
+### Custom Environment
+Trained model for 1000 episodes:
+
+![actor_critic_custom](https://github.com/sobhanshukueian/Reinforcement-Learning-Playground/assets/47561760/d166b1cc-3ee7-4a71-ab6e-5bf22d3fa223)
 
