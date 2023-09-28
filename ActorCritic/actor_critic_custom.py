@@ -4,18 +4,20 @@ from gym import spaces
 import argparse
 import pygame
 import sys
+import imageio
+
 
 import numpy as np
 import torch
 
-from Actor_Critic import Agent
+from actor_critic import Agent
 from utils import *
 
 # @title Arguments
 parser = argparse.ArgumentParser(description='Actor Critic')
 parser.add_argument('--mode', default="train", type=str, help='Mode of the run, whether train or test.')
 
-parser.add_argument('--episodes', default=500, type=int, metavar='N', help='Number of episodes for training agent.')
+parser.add_argument('--episodes', default=1000, type=int, metavar='N', help='Number of episodes for training agent.')
 parser.add_argument('--lr', '--learning-rate', default=0.005, type=float, metavar='LR', help='initial learning rate', dest='lr')
 parser.add_argument('--wd', default=0.0001, type=float, help='Weight decay for training optimizer')
 parser.add_argument('--seed', default=3, type=int, help='Seed for reproducibility')
@@ -113,6 +115,11 @@ class PygameUI:
         self.screen = pygame.display.set_mode((self.screen_width, self.screen_height))
         self.clock = pygame.time.Clock()
 
+    def capture_frame(self):
+        """Capture the current Pygame screen as an image."""
+        data = pygame.surfarray.array3d(pygame.display.get_surface())
+        return data
+    
     def reset(self):
         self.screen = pygame.display.set_mode((self.screen_width, self.screen_height))
         self.clock = pygame.time.Clock()
@@ -176,8 +183,9 @@ def train(args)->None:
 
 #  Test the trained actor model using pygame visualization
 def test(args) -> None:
+    frames = []
     reproducibility(args.seed)
-    agent = Agent(args, "actor")
+    agent = Agent(args, "last")
     env = ReachOpponentEnv()
     pygame_ui = PygameUI(env)
 
@@ -189,12 +197,16 @@ def test(args) -> None:
         done = False
         while not done:
             pygame_ui.render(state[:2], state[2:])
+            frame = pygame_ui.capture_frame() 
+            # print(frame)
+            frames.append(frame)
             action = agent.get_action(state)
             n_state, reward, done, info = env.step(action)
             n_state = torch.tensor(n_state).float().to(args.device)
             state = n_state
 
     pygame.quit()
+    imageio.mimsave('./actor_critic_custom.gif', frames, duration=0.1)
     return None
 
 
