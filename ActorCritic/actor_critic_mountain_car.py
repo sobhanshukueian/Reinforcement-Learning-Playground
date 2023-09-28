@@ -4,14 +4,14 @@ import numpy as np
 import random
 import torch
 
-from Actor_Critic import Agent
+from actor_critic import Agent
 from utils import *
         
 # @title Arguments
 parser = argparse.ArgumentParser(description='Actor Critic')
 parser.add_argument('--mode', default="train", type=str, help='Mode of the run, whether train or test.')
 
-parser.add_argument('--episodes', default=100, type=int, metavar='N', help='Number of episodes for training agent.')
+parser.add_argument('--episodes', default=500, type=int, metavar='N', help='Number of episodes for training agent.')
 parser.add_argument('--lr', '--learning-rate', default=0.001, type=float, metavar='LR', help='initial learning rate', dest='lr')
 parser.add_argument('--wd', default=0.0001, type=float, help='Weight decay for training optimizer')
 parser.add_argument('--seed', default=3, type=int, help='Seed for reproducibility')
@@ -91,7 +91,7 @@ def train(args)->None:
 def test(args) -> None:
     reproducibility(args.seed)
     args.results_dir = prepare_save_dir(args)
-    agent = Agent(args, "actor")
+    agent = Agent(args, "last")
     env = gym.make("MountainCarContinuous-v0", render_mode="human")
 
     print("Start Testing")
