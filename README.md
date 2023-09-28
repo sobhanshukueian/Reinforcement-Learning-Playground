@@ -11,7 +11,7 @@ Hey there! I'm super stoked to kick off a new project in this repository. My pla
 - [Algorithms](#algorithms)
   - [DQN (Deep Q-Network)](#dqn-deep-q-network)
   - [Policy Gradient (Implemented✅)](#policy-gradient)
-  - [Actor-Critic (Underdevelopment⛔)](#actor-critic)
+  - [Actor-Critic (Implemented✅)](#actor-critic)
   - [Proximal Policy Optimization (TODO⛔)](#ppo-proximal-policy-optimization)
 
 
@@ -55,7 +55,7 @@ DQN is a fundamental RL algorithm that uses a deep neural network to approximate
 
 ### Actor-Critic
 
-Actor-critic algorithms combine the benefits of value-based and policy-based methods by maintaining both a policy (the actor) and a value function (the critic). Explore algorithms such as A3C (Asynchronous Advantage Actor-Critic) and A2C to enhance your understanding of actor-critic approaches.
+Actor-critic algorithms combine the benefits of value-based and policy-based methods by maintaining both a policy (the actor) and a value function (the critic). Explore algorithms such as A3C (Asynchronous Advantage Actor-Critic) and A2C to enhance your understanding of actor-critic approaches. Check here for my implementation [Actor-Critic](https://github.com/sobhanshukueian/Reinforcement-Learning-Playground/tree/main/ActorCritic)
 
 ### PPO (Proximal Policy Optimization)
 
