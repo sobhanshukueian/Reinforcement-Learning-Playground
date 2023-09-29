@@ -23,17 +23,9 @@ Reinforcement Learning (RL) is a fascinating field of artificial intelligence wh
 
 OpenAI Gym is a toolkit for developing and comparing reinforcement learning algorithms. It provides a variety of environments ranging from classic control tasks to Atari 2600 games. Here are some of the environments we'll be working with:
 
-- **CartPole-v1**
-  
-  ![images/mountain car.gif](https://gymnasium.farama.org/_images/cart_pole.gif)
-
-- **Pendulum-v0**
-
-  ![Pendulum-v0](https://gymnasium.farama.org/_images/pendulum.gif)
-
-- **MountainCar-v0**
-
-![mountain-car](https://gymnasium.farama.org/_images/mountain_car.gif)
+| CartPole-v1 | Pendulum-v0     | MountainCar-v0                |
+| :-------- | :------- | :------------------------- |
+|   ![images/mountain car.gif](https://gymnasium.farama.org/_images/cart_pole.gif) |   ![Pendulum-v0](https://gymnasium.farama.org/_images/pendulum.gif) | ![mountain-car](https://gymnasium.farama.org/_images/mountain_car.gif) |
 
 
 ## Algorithms
