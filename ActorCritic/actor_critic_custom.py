@@ -64,7 +64,7 @@ class ReachOpponentEnv(Env):
         self.observation_space = spaces.Box(low=0, high=10, shape=(4,))  # State: [agent_x, agent_y, opponent_x, opponent_y]
         self.agent_position = np.array([0.0, 0.0])
         self.opponent_position = np.array([8.0, 8.0])
-        self.max_steps = 1000  # Maximum number of steps per episode
+        self.max_steps = 100  # Maximum number of steps per episode
         self.current_step = 0
 
     def reset(self):
@@ -206,7 +206,7 @@ def test(args) -> None:
             state = n_state
 
     pygame.quit()
-    imageio.mimsave('./actor_critic_custom.gif', frames, duration=0.1)
+    imageio.mimsave('./random.gif', frames, duration=0.1)
     return None
 
 
