@@ -30,6 +30,9 @@ Let's navigate this repository like seasoned adventurers:
 ## Results
 ### Custom Environment
 Trained model for 1000 episodes:
+| Random | Trained episodes|
+| :-------- | :------- |
+|![random](https://github.com/sobhanshukueian/Reinforcement-Learning-Playground/assets/47561760/1c11fd1d-5c2f-4944-a1c1-7b72ed40eb0d) | ![actor_critic_custom](https://github.com/sobhanshukueian/Reinforcement-Learning-Playground/assets/47561760/d166b1cc-3ee7-4a71-ab6e-5bf22d3fa223) |
 
-![actor_critic_custom](https://github.com/sobhanshukueian/Reinforcement-Learning-Playground/assets/47561760/d166b1cc-3ee7-4a71-ab6e-5bf22d3fa223)
+
 
