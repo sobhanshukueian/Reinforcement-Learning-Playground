@@ -1,6 +1,6 @@
 # Reinforcement Learning Playground 🚀
 
-Hey there! I'm super stoked to kick off a new project in this repository. My plan is to implement a bunch of awesome Reinforcement Learning (RL) algorithms using Python, OpenAI Gym environments, and Pytorch. I can't wait to see what exciting results we'll achieve together!
+Hey there! I'm super stoked to kick off a new project in this repository. My plan is to implement a bunch of awesome Reinforcement Learning (RL) algorithms using Python, OpenAI Gym environments, and Pytorch.
 
 ![WorldOfChaldeaChaldeaGIF (2)](https://github.com/sobhanshukueian/Reinforcement-Learning-Playground/assets/47561760/982589d0-d7a8-4b6f-b4b8-6e2b717ccace)
 
